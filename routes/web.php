@@ -11,12 +11,11 @@
 |
 */
 
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('tambah');
 });
 
-// Route::view('/', 'new');
+Route::post('/about', 'MahasiswaController@show');
 
-Route::get('new/{id}', function($id){
-    return $id;
-});
+
